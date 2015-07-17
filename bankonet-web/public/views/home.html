@@ -1,0 +1,25 @@
+<div class="container">
+	<h1>Liste des employés</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Nom</th>
+				<th>Prénom</th>
+				<th>Fontion</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="employe in homeCtrl.employes | orderBy:'id'">
+				<td>{{ employe.id }}</td>
+				<td>{{ employe.nom }}</td>
+				<td>{{ employe.prenom }}</td>
+				<td>{{ employe.fonction }}</td>
+				<td><input type="button" value="Modifier" ng-click="homeCtrl.toModif(employe.id)"></td>
+				<td><input type="button" value="Supprimer" ng-click="homeCtrl.supprimer(employe.id)"></td>
+			</tr>
+		</thead>
+	</table>
+</div>

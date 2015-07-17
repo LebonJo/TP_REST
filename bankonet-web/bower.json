@@ -1,0 +1,22 @@
+{
+  "name": "bankonet-web",
+  "version": "0.0.0",
+  "authors": [
+    "Jonathan Lebon <jonathan.lebon@outlook.com>"
+  ],
+  "description": "client web pour api rest",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-route": "~1.4.3",
+    "angular-bootstrap": "~0.13.0",
+    "bootstrap": "~3.3.5"
+  }
+}

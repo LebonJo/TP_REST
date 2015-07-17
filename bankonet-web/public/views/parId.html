@@ -1,0 +1,14 @@
+<div class="container">
+	<h1>Recherche d'employé</h1>
+	<form ng-submit="parIdCtrl.getEmploye()">
+		<input ng-model="parIdCtrl.id">
+	</form>
+	<h2>{{ parIdCtrl.msgResult }}</h2>
+	<div ng-if="parIdCtrl.employe != null">
+		<p><label>Nom :</label> {{ parIdCtrl.employe.nom }}</p>
+		<p><label>Prénom :</label> {{ parIdCtrl.employe.prenom }}</p>
+		<p><label>Fonction :</label> {{ parIdCtrl.employe.fonction }}</p>
+		<input type="button" ng-click="parIdCtrl.toModif(parIdCtrl.id)" value="Modifier">
+		<input type="button" ng-click="parIdCtrl.supprimer(parIdCtrl.id)" value="Supprimer">
+	</div>
+</div>
